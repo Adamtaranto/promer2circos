@@ -12,7 +12,6 @@
 ###Import modules
 import sys;
 import argparse;
-import os;
 import re;
 
 #coords_input=open('data/promerdata.txt','rU').readlines()
@@ -37,7 +36,8 @@ def main(coords_input):
 	for row in rawLinks:
 		l=re.split(r'\t+', row.rstrip('\n'))
 		#print l[14]
-		print 'Link'+str(i)+'\t'+l[0]+'\t'+l[1]+'\t'+l[13]+'\n'+'Link'+str(i)+'\t'+l[2]+'\t'+l[3]+'\t'+l[14]+'\n'
+		print 'Link'+str(i)+'\t'+l[0]+'\t'+l[1]+'\t'+l[13]+'\n'+'Link'+str(i)+'\t'+l[2]+'\t'+l[3]+'\t'+l[14]
+		#sys.stdout.write
 		i+=1
 
 
